@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Powered Study Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">📚 Study<span>AI</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">✨ Your Smart Learning Partner</span>
+
+                <h1>Study Smarter with<br>
+                    <span>Artificial Intelligence</span>
+                </h1>
+
+                <p>
+                    Generate notes, summarize text, create MCQs
+                    and get instant answers with your personal
+                    AI-powered study assistant.
+                </p>
+
+                <a href="#features" class="primary-btn">
+                    Explore Features →
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <div class="book-icon">📖</div>
+                <h3>Your AI Study Buddy</h3>
+                <p>Learn • Practice • Improve</p>
+                <div class="floating-icon">🤖</div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+
+            <div class="section-heading">
+                <span class="tag">WHAT WE OFFER</span>
+                <h2>Explore AI Study Tools</h2>
+                <p>Everything you need to make learning easier.</p>
+            </div>
+
+            <!-- Notes Generator -->
+            <div class="tool-card">
+                <div class="tool-heading">
+                    <span class="tool-icon">📝</span>
+                    <div>
+                        <h3>AI Notes Generator</h3>
+                        <p>Generate simple and detailed study notes.</p>
+                    </div>
+                </div>
+
+                <label for="notesInput">Enter your subject or topic</label>
+                <input id="notesInput" type="text"
+                    placeholder="Example: Artificial Intelligence">
+
+                <button onclick="generateAI('notes')">
+                    Generate Notes ✨
+                </button>
+
+                <div id="notesResult" class="result"></div>
+            </div>
+
+            <!-- Text Summarizer -->
+            <div class="tool-card">
+                <div class="tool-heading">
+                    <span class="tool-icon">📄</span>
+                    <div>
+                        <h3>Text Summarizer</h3>
+                        <p>Convert long text into simple summaries.</p>
+                    </div>
+                </div>
+
+                <label for="summaryInput">Paste your text</label>
+                <textarea id="summaryInput"
+                    placeholder="Paste your paragraph or study material here..."></textarea>
+
+                <button onclick="generateAI('summary')">
+                    Summarize Text ✨
+                </button>
+
+                <div id="summaryResult" class="result"></div>
+            </div>
+
+            <!-- MCQ Generator -->
+            <div class="tool-card">
+                <div class="tool-heading">
+                    <span class="tool-icon">❓</span>
+                    <div>
+                        <h3>MCQ Generator</h3>
+                        <p>Practice with five AI-generated questions.</p>
+                    </div>
+                </div>
+
+                <label for="mcqInput">Enter your topic</label>
+                <input id="mcqInput" type="text"
+                    placeholder="Example: Computer Networks">
+
+                <button onclick="generateAI('mcq')">
+                    Generate MCQs ✨
+                </button>
+
+                <div id="mcqResult" class="result"></div>
+            </div>
+
+            <!-- AI Chatbot -->
+            <div class="tool-card">
+                <div class="tool-heading">
+                    <span class="tool-icon">🤖</span>
+                    <div>
+                        <h3>AI Study Chatbot</h3>
+                        <p>Ask academic questions and get explanations.</p>
+                    </div>
+                </div>
+
+                <label for="chatInput">Ask your question</label>
+                <textarea id="chatInput"
+                    placeholder="Example: What is Machine Learning?"></textarea>
+
+                <button onclick="generateAI('chat')">
+                    Ask AI ✨
+                </button>
+
+                <div id="chatResult" class="result"></div>
+            </div>
+
+            <!-- Study Tips -->
+            <div class="tool-card">
+                <div class="tool-heading">
+                    <span class="tool-icon">💡</span>
+                    <div>
+                        <h3>Study Tips Generator</h3>
+                        <p>Get useful tips to improve your learning.</p>
+                    </div>
+                </div>
+
+                <label for="tipsInput">Enter your subject</label>
+                <input id="tipsInput" type="text"
+                    placeholder="Example: Mathematics">
+
+                <button onclick="generateAI('tips')">
+                    Generate Study Tips ✨
+                </button>
+
+                <div id="tipsResult" class="result"></div>
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About AI Study Assistant</h2>
+            <p>
+                AI Study Assistant is a Generative AI-based
+                educational application designed to help students
+                understand concepts, prepare notes, practice
+                questions and improve their learning experience.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 AI Study Assistant | Made for Smart Learning 💜</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
